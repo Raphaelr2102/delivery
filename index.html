@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressoEats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #e60023;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #36d666; 
+            color: white;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .restaurant-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease-in-out;
+        }
+        .image{
+            width: 15vw;
+        }
+
+        .mercado{
+            width: 15vw;
+        }
+        
+        .restaurant-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao ExpressoEats</h1>
+        <p>Peça sua comida favorita ou compras online!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">mercados</a></li>
+            <li><a href="#">Restaurantes</a></li>
+            <li><a href="#">Pedidos</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Ajuda</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Restaurantes em Destaque</h2>
+        <div>
+            
+            <div class="restaurant-card">
+                <img src="sacolao.jpg" class="image" alt="Restaurante 1">
+                <h3>Sacolão capital</h3>
+                <p>entrega gratis</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="mercado.jpg" class="mercado" alt="Restaurante 2">
+                <h3>mercado nossa kaza</h3>
+                <p>Novidade</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 ExpressoEats. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
